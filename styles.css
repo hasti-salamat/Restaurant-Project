@@ -1,0 +1,293 @@
+/* 
+   Roberto Café & Restaurant style sheet
+   Filename: styles.css
+   Author:   Hasti Salamat
+   Date:     04/30/2023
+   Final Project 
+ */
+
+
+
+
+
+
+ 
+/* reset styles */
+ article, body, div, figcaption, figure, footer, header, h1, h2, h3, img, nav, p, table, thead, tbody, th, td, dd, dl, dt {
+    border: 0;
+    padding: 0;
+    margin: 0;
+ }
+ table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+ /* body and page container */
+ body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Condensed', sans-serif;
+	 background-repeat: no-repeat;
+	 background-attachment: fixed;
+    background-image: url("Images/view.jpg");         /*Background picture*/
+    background-size: cover;
+   
+ }
+ .container {
+    height: 100vh;
+    margin: 0;
+    padding: 0;  
+ }
+
+
+
+
+
+
+ 
+ /* header section */
+ header {
+    padding: 0.5em;
+    background-color: #17bc6198;
+    text-align: center;
+ }
+ h1 {
+    background: url("Images/icon.JPG");               /*header logo picture*/
+    background: #ffffff;
+    font-weight: 700;
+    font-size: 3em;
+ }
+
+
+
+
+
+
+
+
+ /* site navigation */
+ nav.sitenavigation {
+     background: linear-gradient(to right, #139936, #ffffff, #ff0000);
+     text-align: center;
+
+     }
+ nav.sitenavigation p {
+     display: inline-block;
+     margin: 0.4em 0.6em;
+     font-size: 1.6em;
+ }
+ nav.sitenavigation a {
+     color: rgb(170, 27, 27);
+     text-decoration: none;    
+ }
+ nav.sitenavigation a:visited {
+     color: #790909;
+ }
+ nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+     color: rgb(11, 80, 34);
+     text-shadow: 1px -2px 0 #fffbfb;
+ }
+ nav.sitenavigation a:active {
+     position: relative;
+     top: 1px;
+     left: 1px;
+     color: rgb(11, 80, 34);
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+ /* main content */
+ article {
+    max-width: 1000px;
+    padding: 10px;
+    margin: 1em auto;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.77);
+ }
+ h2 {
+    margin: 0 0 0.4em;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-align: center;
+}
+.row {
+    display: table-row;
+}
+.row div {
+    display: table-cell;
+    padding: 0.25em 0.5em;
+}
+.day {
+    font-weight: bold;
+}
+
+.image-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.image-container img {
+   margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+/* main content table home*/
+
+ table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-bottom: 20px;
+ }
+ 
+ th, td {
+   border: 1px solid #ff0000de;
+   padding: 8px;
+   text-align: left;
+ }
+ 
+ th {
+   background-color: #f2f2f2;
+   color:#004d1d;
+ }
+ 
+ tr:nth-child(even) {
+   background-color: #f2f2f2;
+ }
+
+
+
+
+
+
+
+
+
+ /* main content table for hour*/
+ table {
+   font-family: Arial, sans-serif;
+   border-collapse: collapse;
+   width: 100%;
+}
+
+td, th {
+   border: 1px solid #dddddd;
+   text-align: left;
+   padding: 8px;
+   color: #004d1d;
+}
+
+th {
+   background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+   background-color: #dddddd;
+}
+
+
+
+
+
+
+
+
+ /* footer section */
+ footer {
+    background-color: #b30000a8;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px; 
+    left: 0; 
+    bottom: 0; 
+    width: 100%; 
+    clear: both;
+    }
+    
+
+
+
+
+
+
+
+ /* Styles for social media buttons */
+ .social-media-btn {
+   display: inline-block;
+   padding: 10px 20px;
+   border-radius: 5px;
+   color: #fff;
+   font-weight: bold;
+   text-decoration: none;
+   transition: all 0.2s ease-in-out;
+   margin-right: 10px;
+}
+
+.social-media-btn-facebook {
+   background-color: #3b5998;
+}
+
+.social-media-btn-facebook:hover {
+   background-color: #3c5896;
+}
+
+.social-media-btn-instagram {
+   background: linear-gradient(to right, #eafb00, #ff7b00, #ff0026, #ff0088, #aa00ff);
+}
+
+.social-media-btn-instagram:hover {
+   background-color: #c13535;
+}
+
+
+
+
+
+
+
+
+
+
+ /* print styles */
+ @media print {
+    .container, h1, h2, header p, p {
+       color: black;
+       background-color: white;
+    }
+    nav{
+     display: none;
+    }
+ }
+ @page {
+    margin: 1in;
+ }
